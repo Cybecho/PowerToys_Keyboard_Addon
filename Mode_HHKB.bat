@@ -2,11 +2,12 @@
 
 rem Set the source and target directories.
 set SOURCE=%~dp0
-set MODE=%setting_Texshinobi
+set MODE=%setting_ThinkPad_HHKB
 set TARGET=%LOCALAPPDATA%\Microsoft\PowerToys\Keyboard Manager
 
 rem Use xcopy to copy only the files in the "setting1" directory.
 xcopy /y "%SOURCE%%MODE%\*" "%TARGET%" /e /h /k
+
 
  :: BatchGotAdmin
  :-------------------------------------
@@ -37,6 +38,6 @@ REM --> If error flag set, we do not have admin.
 taskkill /F /IM powertoys.exe
 start "" "C:\Program Files\PowerToys\PowerToys.exe"
 
-start "" "%SOURCE%\Caps2Ctrl.reg"
+start "" "%SOURCE%\Ctrl2Caps_HHKB.reg"
 
 exit

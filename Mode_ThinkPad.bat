@@ -9,9 +9,6 @@ rem Use xcopy to copy only the files in the "setting1" directory.
 xcopy /y "%SOURCE%%MODE%\*" "%TARGET%" /e /h /k
 
 
-
-
-
  :: BatchGotAdmin
  :-------------------------------------
  REM  --> Check for permissions
@@ -40,5 +37,7 @@ REM --> If error flag set, we do not have admin.
 
 taskkill /F /IM powertoys.exe
 start "" "C:\Program Files\PowerToys\PowerToys.exe"
+
+start "" "%SOURCE%\Caps2Ctrl.reg"
 
 exit
