@@ -10,6 +10,6 @@ via Windows batch file...
 
 `%LOCALAPPDATA%/Microsoft/Powertoys/KeyboardManager/default.json` (상대경로)
 
-`C:\Users\<USERNAME>\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json` (절대경로)
+`C:\Users\<USERNAME>\AppData\Local\Microsoft\PowerToys\Keyboard Manager\default.json` (절대경로)
 
 을 배치파일이 있는 디렉토리에 넣어줍니다.
